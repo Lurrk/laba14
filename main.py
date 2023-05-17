@@ -117,13 +117,13 @@ def laba14_2():
             self.bmi_result.setText(str(bmi))
 
             if bmi < 18.5:
-                advice = 'Истощение'
+                advice = 'ЖРИ БОЛЬШЕ'
             elif 18.5 <= bmi <= 24.9:
-                advice = 'Норма'
+                advice = 'КРАСАВА'
             elif 25 <= bmi <= 29.9:
-                advice = 'Избыток'
+                advice = 'Сегодня без ужина'
             else:
-                advice = 'Ожирение'
+                advice = 'ЖРИ МЕНЬШЕ'
 
             self.advice_result.setText(advice)
             self.advice_result.resize(self.advice_result.sizeHint())
